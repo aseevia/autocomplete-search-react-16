@@ -1,0 +1,33 @@
+.app{
+  position: relative;
+  height: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 520px) {
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  &__logo{
+    width: 100%;
+    margin-bottom: 30px;
+
+    svg{
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: map_get($colors, logo);
+    }
+  }
+
+  &__search{
+    width: 100%;
+    position: relative;
+  }
+}

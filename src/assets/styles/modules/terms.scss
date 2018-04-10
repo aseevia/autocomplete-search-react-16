@@ -1,0 +1,37 @@
+.ac-terms{
+  &__list{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+    user-select: none;
+    list-style: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  &__item{
+    &:hover{
+      background-color: rgb(255, 248, 236);
+    }
+    &:focus, &:hover, &:active{
+      outline: none;
+    }
+    &--focused{
+      background-color: rgb(255, 248, 236);
+    }
+  }
+  &__trigger{
+    //height: 36px;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    padding: 5px 20px;
+    background: none;
+    border: none;
+  }
+}
